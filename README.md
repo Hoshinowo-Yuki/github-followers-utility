@@ -14,7 +14,7 @@ A CLI tool for managing GitHub follow/unfollow actions.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Yuzuk1Shimotsuki/github-followers-utility.git
+   git clone https://github.com/shirakamiNeko/github-followers-utility.git
    cd github-followers-utility
 
 2. Install dependencies:
@@ -47,3 +47,4 @@ A CLI tool for managing GitHub follow/unfollow actions.
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
