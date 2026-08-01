@@ -2,49 +2,52 @@
 
 A CLI tool for managing GitHub follow/unfollow actions.
 
-## Features
+> [!WARNING]
+> This tool is for educational purposes only. Use it responsibly and in compliance with [GitHub's Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).
+>
+> Improper use of this tool for automate actions on GitHub might result in your account being **flagged** or **BANNED**. I am not responsible for any consequences that may arise from this scenario.
+
+# Features
 
 - Export users you are following to a CSV file.
 - Export organization members to a CSV file.
 - Follow/unfollow users from a CSV file.
 - Follow/unfollow all members of an organization.
 
-## Installation
+# Installation
 
-1. Clone the repository:
+Clone this repository and install the required dependencies:
 
-   ```bash
-   git clone https://github.com/shirakamiNeko/github-followers-utility.git
-   cd github-followers-utility
+```bash
+git clone https://github.com/Hoshinowo-Yuki/github-followers-utility.git
+cd github-followers-utility
+```
 
-2. Install dependencies:
+```bash
+npm install axios commander
+```
 
-   ```bash
-   npm install axios commander
-   ```
+and set it up with your GitHub credentials:
 
-3. Set up your GitHub credentials:
+```bash
+export GITHUB_USERNAME=your_username
+export GITHUB_TOKEN=your_personal_access_token
+```
 
-   ```bash
-   export GITHUB_USERNAME=your_username
-   export GITHUB_TOKEN=your_personal_access_token
-   ```
+# Usage
 
-## Usage
+Export following users to a CSV file:
 
-- Export following users to CSV:
+```bash
+node script.js export-following following.csv
+```
 
-  ```bash
-  node script.js export-following following.csv
-  ```
+Follow users from a specified CSV file:
 
-- Follow users from CSV:
+```bash
+node script.js follow-from-csv following.csv --delay 10
+```
 
-  ```bash
-  node script.js follow-from-csv following.csv --delay 10
-  ```
-
-## License
+# License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
-
